@@ -1,0 +1,2 @@
+What happens to 3D genome looping at Pol2 sites strongly bound by P300 but that are not occupied by P3F
+> Response: We assessed this by using the L2FC of read coverage between our RH4 RNA Polymerase-II targeted HiChIP at the union of peaks between control (DMSO) and drug-treated (dCBP1) cases, splitting the regions by whether they overlap p300 only, P3F only, or p300 and P3F binding sites. This is further split by CpG island occupancy.
