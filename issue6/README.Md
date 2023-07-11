@@ -1,0 +1,2 @@
+CBP/P300 are central/core regulators of gene activation in cells. How expected are the results of the second part? Can the authors put more emphasis what’s going on outside PAX3-FOXO1 target regions and discuss more this.
+> Response: We made boxplots of L2FC in gene expression before and after dCBP1 treatment, for genes from these two categories: 1, genes near p300 enhancers without P3F and 2, genes near p300 enhancers with P3F.
