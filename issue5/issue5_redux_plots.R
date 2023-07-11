@@ -50,7 +50,7 @@ pdf("RH4_Pol2_Contact_signal.pdf", width=10, height=8)
 ggplot(rh4_pol2_trip_ov, aes(y=L2FC, x=group_type)) + 
   #stat_ydensity(geom="violin", aes(fill=group_type)) + 
   geom_jitter(alpha=0.05, aes(color=group_type)) +
-  geom_boxplot(width=0.1) + theme_minimal_grid() + 
+  geom_boxplot(width=0.5, outlier = NA) + theme_minimal_grid() + 
   #theme(text=element_text(size=16)) +
   ggtitle("RH4 Pol2 Contact Signal") +
   xlab("Types of Regions by Occupancy") +
