@@ -1,0 +1,2 @@
+The impact of P300i and P300-PROTACs on histone acetylation H3K18ac or H3K27ac should be assessed and segregated by enhancer and promoter regions. 
+> Response: Using the phenotypically similar RH5 cell-line, we assessed the impact of p300 degradation on HiChIP contacts in H3K27ac data by comparing the read coverage at the union of peaks between the control (DMSO) and dCBP1 cases, split between regions proximal (<= 5kb) and distal (> 5kb) from gene promoters.
