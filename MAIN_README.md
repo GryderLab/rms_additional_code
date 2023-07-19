@@ -12,12 +12,12 @@ Separation into C793 mutation dependent and partially dependent gene sets combin
 
 
 ### Issue 3
-Acetylation Levels and Chromatin Accessibility at p300 binding sites.
+Acetylation Levels and Chromatin Accessibility at p300 binding sites in RH4 cells.
 <p align="center"><img align="center" alt="RH4_heatmaps_finalized_plot" src="https://github.com/GryderLab/rms_additional_code/assets/135348829/900e6ea0-fe5f-40bb-9a1f-f633b4e63085">
 </p>
 
 ### Issue 4
-The impact of P300/CBP degraders on H3K27ac, segregated by enhancer and promoter regions. 
+The impact of P300/CBP degraders on RH5 H3K27ac, segregated by enhancer and promoter regions (compared to impact on RH4 Pol2).
 <p align="center"><img align="center" alt="L2FC ranked finalized plots" src="https://github.com/GryderLab/rms_additional_code/assets/135348829/a2ccb727-ff59-4bf7-8921-8f615f45bf15">
 </p>
 
@@ -27,5 +27,5 @@ The impact of P300/CBP degraders on H3K27ac, segregated by enhancer and promoter
 </p>
 
 ### Issue 6
-Changes in gene expression due to dCBP1, split across genes near and distal from p300 enhancers.
+Changes in RH4 gene expression due to dCBP1, split across genes near and distal from p300 enhancers.
 <p align="center"></p>
