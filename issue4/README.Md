@@ -10,11 +10,13 @@ The process of running this data was as described in https://github.com/GryderLa
 
 Creating the Primary Output Figure
 The invoke used to create the data shown here for RH4 is:
+```
 sbatch -p smp --ntasks=2 --mem=32g --cpus-per-task=16 -J bCComp --export=sample1=RH4_DMSO_6h_Pol2_HiChIP_081721_NovoG,sample2=RH4_dCBP1_6h_Pol2_HiChIP_081721_NovoG,name1=RH4_DMSO_6h_Pol2,name2=RH4_dCBP1_6h_Pol2,pValue=p-4,overlapname=gene_TSS5k,overlapbed=gene_tss5k.clean.bed runBedCovCompareSpiked.sh
-
+```
 The invoke used to create the data shown here for RH5 is:
+```
 sbatch -p smp --ntasks=2 --mem=32g --cpus-per-task=16 -J bCComp --export=sample1=RH5_DMSO_H3K27ac_070622_NovoG,sample2=RH5_dCBP1_H3K27ac_070622_NovoG,name1=RH5_DMSO_H3K27ac,name2=RH5_dCBP1_H3K27ac,pValue=p-4,overlapname=gene_TSS5k,overlapbed=gene_tss5k.clean.bed runBedCovCompareSpiked.sh
-
+```
 > Note that in both cases, the script run is "runBedCovCompareSpiked.sh", which runs the comparison informed by AQuA values (ratios between the hg38 reads and the orthogonal mm10 reads sequenced at the same time).
 
 
