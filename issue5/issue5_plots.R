@@ -52,14 +52,15 @@ rh4_pol2_trip_ov <- rh4_pol2_trip_ov[rh4_pol2_trip_ov$group_type != "Bound by P3
 # OUTPUT OF FINAL PLOT
 # ==============
 # writes the corresponding plot to a PDF for later polishing
-pdf("RH4_Pol2_Contact_signal_by_P3F_p300_CpG.pdf", width=10, height=8)
+pdf("RH4_Pol2_Contact_signal_by_P3F_p300_CpG.pdf", width=14, height=8)
 
 ggplot(rh4_pol2_trip_ov, aes(y=L2FC, x=group_type)) + 
-  geom_jitter(alpha=0.05, aes(color=group_type)) +
+  geom_jitter(alpha=0.01) +
   geom_boxplot(width=0.5, outlier.shape = NA) + theme_minimal_grid() + 
   ggtitle("RH4 Pol2 Contact Signal") +
   xlab("Types of Regions by Occupancy") +
-  ylab("L2FC of RNA Pol II Contacts") + facet_wrap(~ CPG_SPLIT)
+  ylab("L2FC of RNA Pol II Contacts") + facet_wrap(~ CPG_SPLIT) +
+  theme(legend.position="none")
 
 graphics.off()
 
