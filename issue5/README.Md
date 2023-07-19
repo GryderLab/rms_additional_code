@@ -11,9 +11,9 @@ The initial BED file was created using BedCovCompare (see: https://github.com/Gr
 sbatch -p smp --ntasks=2 --mem=32g --cpus-per-task=16 -J bCComp --export=sample1=RH4_DMSO_6h_Pol2_HiChIP_081721_NovoG,sample2=RH4_dCBP1_6h_Pol2_HiChIP_081721_NovoG,name1=RH4_DMSO_6h_Pol2,name2=RH4_dCBP1_6h_Pol2,pValue=p-4,overlapname=gene_TSS5k,overlapbed=gene_tss5k.clean.bed runBedCovCompareSpiked.sh
 > Gives you RH4_DMSO_6h_Pol2_RH4_dCBP1_6h_Pol2_gene_TSS5k.overlap.AB.delta.l2fc.bed
 
-bedtools intersect -a RH4_DMSO_6h_Pol2_RH4_dCBP1_6h_Pol2_gene_TSS5k.overlap.AB.delta.l2fc.bed -b RH4_D6_PAX3FOXO1_GSE116344.nobl.p-14.bed -c > RH4_Pol2_P3F_overlap.l2fc.bed #MACS threshold 0.00000000000001
-bedtools intersect -a RH4_Pol2_P3F_overlap.l2fc.bed -b RH4_p300SC_GSE83726.nobl.bed -c > RH4_Pol2_P3F_p300_overlap.l2fc.bed #MACS threshold 0.00001
-bedtools intersect -a RH4_Pol2_P3F_p300_overlap.l2fc.bed -b cpgisland.hg38.bed > RH4_Pol2_P3F_p300_cpg_dist.l2fc.bed
+- bedtools intersect -a RH4_DMSO_6h_Pol2_RH4_dCBP1_6h_Pol2_gene_TSS5k.overlap.AB.delta.l2fc.bed -b RH4_D6_PAX3FOXO1_GSE116344.nobl.p-14.bed -c > RH4_Pol2_P3F_overlap.l2fc.bed #MACS threshold 0.00000000000001
+- bedtools intersect -a RH4_Pol2_P3F_overlap.l2fc.bed -b RH4_p300SC_GSE83726.nobl.bed -c > RH4_Pol2_P3F_p300_overlap.l2fc.bed #MACS threshold 0.00001
+- bedtools intersect -a RH4_Pol2_P3F_p300_overlap.l2fc.bed -b cpgisland.hg38.bed > RH4_Pol2_P3F_p300_cpg_dist.l2fc.bed
 
 Creating the Primary Output Figure:
 All of the code required for making the plot is in: issue5_plots.R
