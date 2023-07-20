@@ -9,7 +9,7 @@ Activity from directly bound P3F target genes (within 500kb of P3F binding) vs i
 
 ### Issue 2
 Separation into C793 mutation dependent and partially dependent gene sets combined with an analysis of the contextual nature of the P3F binding site motifs.
-
+<p align="center"></p>
 
 ### Issue 3
 Acetylation Levels and Chromatin Accessibility at p300 binding sites in RH4 cells.
@@ -20,6 +20,8 @@ Acetylation Levels and Chromatin Accessibility at p300 binding sites in RH4 cell
 The impact of P300/CBP degraders on RH5 H3K27ac, segregated by enhancer and promoter regions (compared to impact on RH4 Pol2).
 <p align="center"><img align="center" alt="L2FC ranked finalized plots" src="https://github.com/GryderLab/rms_additional_code/assets/135348829/a2ccb727-ff59-4bf7-8921-8f615f45bf15">
 </p>
+<p align="center"><img width="472" alt="MA plots for H3K27ac at TSS proximal and distal regions" src="https://github.com/GryderLab/rms_additional_code/assets/135348829/e999d65c-282e-458a-beef-25254d3dd454">
+</p>
 
 ### Issue 5
 3D genome looping at Pol2 sites strongly bound by P300 with and without P3F.
@@ -28,4 +30,5 @@ The impact of P300/CBP degraders on RH5 H3K27ac, segregated by enhancer and prom
 
 ### Issue 6
 Changes in RH4 gene expression due to dCBP1, split across genes near and distal from p300 enhancers.
-<p align="center"></p>
+<p align="center"><img width="1349" alt="L2FC plots by gene type in p3f and p300 regions" src="https://github.com/GryderLab/rms_additional_code/assets/135348829/cf7a9c74-0b6a-454c-ae88-71fad8b8b3d4">
+</p>
