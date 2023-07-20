@@ -140,6 +140,44 @@ ggplot(EDEN.GRACE.EXP.merged.culsters, aes(x = group_p300.P3F, y = L2FC_RH5_A485
   scale_fill_manual(values = my3cols)+scale_color_manual(values = my3cols)+theme_bw()+geom_boxplot(outlier.shape = NA)+
   ggtitle("RH5_A485: L2FC values - merged clusters")
 
+#############################################################################
+#Grouping based on genes rather than 3D information
+
+housekeeping.genes<-read.delim("HouseKeeping_genes.txt", sep = "\t", header = F)
+housekeeping.genes<-housekeeping.genes$V1
+
+crc.genes<-read.delim("GRYDER_RH4_CRC_TFs_TOP50prct.genelist.txt", sep = "\t", header = F)
+crc.genes<-crc.genes$V1
+
+EDEN.GRACE.EXP.groups <- EDEN.GRACE.EXP.groups %>%
+  mutate(group_genes = case_when(
+    Gene %in% housekeeping.genes ~ "Housekeeping genes",
+    Gene %in% crc.genes ~ "CRC genes",
+    TRUE ~ "Others"
+  ))
+
+##Based on the gene groups
+##RH4 - dCBP1
+ggplot(EDEN.GRACE.EXP.groups,aes(x=group_p300.P3F, y=L2FC_RH4_dCPB1,group=group_p300.P3F,fill=group_genes))+geom_jitter(alpha=0.05,aes(color=group_genes))+
+  scale_fill_manual(values = my3cols)+scale_color_manual(values = my3cols)+theme_bw()+geom_boxplot(outlier.shape = NA)+facet_wrap(~group_genes)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+#RH4 - A485
+ggplot(EDEN.GRACE.EXP.groups,aes(x=group_p300.P3F, y=L2FC_RH4_A485,group=group_p300.P3F,fill=group_genes))+geom_jitter(alpha=0.05,aes(color=group_genes))+
+  scale_fill_manual(values = my3cols)+scale_color_manual(values = my3cols)+theme_bw()+geom_boxplot(outlier.shape = NA)+facet_wrap(~group_genes)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+##RH5 - dCBP1
+ggplot(EDEN.GRACE.EXP.groups,aes(x=group_p300.P3F, y=L2FC_RH5_dCBP1,group=group_p300.P3F,fill=group_genes))+geom_jitter(alpha=0.05,aes(color=group_genes))+
+  scale_fill_manual(values = my3cols)+scale_color_manual(values = my3cols)+theme_bw()+geom_boxplot(outlier.shape = NA)+facet_wrap(~group_genes)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+#RH5 - A485
+ggplot(EDEN.GRACE.EXP.groups,aes(x=group_p300.P3F, y=L2FC_RH5_A485,group=group_p300.P3F,fill=group_genes))+geom_jitter(alpha=0.05,aes(color=group_genes))+
+  scale_fill_manual(values = my3cols)+scale_color_manual(values = my3cols)+theme_bw()+geom_boxplot(outlier.shape = NA)+facet_wrap(~group_genes)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
 
 
 
