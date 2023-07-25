@@ -153,32 +153,31 @@ EDEN.GRACE.EXP.groups <- EDEN.GRACE.EXP.groups %>%
   mutate(group_genes = case_when(
     Gene %in% housekeeping.genes ~ "Housekeeping genes",
     Gene %in% crc.genes ~ "CRC genes",
-    TRUE ~ "Others"
+    TRUE ~ "Other p300 binding genes"
   ))
+
+my2cols <- c("#007A86", "#25B1BB")
+mycols = colorRampPalette(my2cols)(ntile)
 
 ##Based on the gene groups
 ##RH4 - dCBP1
-ggplot(EDEN.GRACE.EXP.groups,aes(x=group_p300.P3F, y=L2FC_RH4_dCPB1,group=group_p300.P3F,fill=group_genes))+geom_jitter(alpha=0.05,aes(color=group_genes))+
-  scale_fill_manual(values = my3cols)+scale_color_manual(values = my3cols)+theme_bw()+geom_boxplot(outlier.shape = NA)+facet_wrap(~group_genes)+
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+ggplot(EDEN.GRACE.EXP.groups,aes(x=group_p300.P3F, y=L2FC_RH4_dCPB1,group=group_p300.P3F,fill=group_p300.P3F))+geom_jitter(alpha=0.05,aes(color=group_p300.P3F))+
+  scale_fill_manual(values = my2cols)+scale_color_manual(values = my2cols)+theme_bw()+geom_boxplot(outlier.shape = NA)+facet_wrap(~group_genes)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1), legend.position = "none")
 
 #RH4 - A485
-ggplot(EDEN.GRACE.EXP.groups,aes(x=group_p300.P3F, y=L2FC_RH4_A485,group=group_p300.P3F,fill=group_genes))+geom_jitter(alpha=0.05,aes(color=group_genes))+
-  scale_fill_manual(values = my3cols)+scale_color_manual(values = my3cols)+theme_bw()+geom_boxplot(outlier.shape = NA)+facet_wrap(~group_genes)+
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+ggplot(EDEN.GRACE.EXP.groups,aes(x=group_p300.P3F, y=L2FC_RH4_A485,group=group_p300.P3F, fill=group_p300.P3F))+geom_jitter(alpha=0.05,aes(color=group_p300.P3F))+
+  scale_fill_manual(values = my2cols)+scale_color_manual(values = my2cols)+theme_bw()+geom_boxplot(outlier.shape = NA)+facet_wrap(~group_genes)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1), legend.position = "none")
 
 ##RH5 - dCBP1
-ggplot(EDEN.GRACE.EXP.groups,aes(x=group_p300.P3F, y=L2FC_RH5_dCBP1,group=group_p300.P3F,fill=group_genes))+geom_jitter(alpha=0.05,aes(color=group_genes))+
-  scale_fill_manual(values = my3cols)+scale_color_manual(values = my3cols)+theme_bw()+geom_boxplot(outlier.shape = NA)+facet_wrap(~group_genes)+
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+ggplot(EDEN.GRACE.EXP.groups,aes(x=group_p300.P3F, y=L2FC_RH5_dCBP1,group=group_p300.P3F,fill=group_p300.P3F))+geom_jitter(alpha=0.05,aes(color=group_p300.P3F))+
+  scale_fill_manual(values = my2cols)+scale_color_manual(values = my2cols)+theme_bw()+geom_boxplot(outlier.shape = NA)+facet_wrap(~group_genes)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1), legend.position = "none")
 
 #RH5 - A485
-ggplot(EDEN.GRACE.EXP.groups,aes(x=group_p300.P3F, y=L2FC_RH5_A485,group=group_p300.P3F,fill=group_genes))+geom_jitter(alpha=0.05,aes(color=group_genes))+
-  scale_fill_manual(values = my3cols)+scale_color_manual(values = my3cols)+theme_bw()+geom_boxplot(outlier.shape = NA)+facet_wrap(~group_genes)+
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+ggplot(EDEN.GRACE.EXP.groups,aes(x=group_p300.P3F, y=L2FC_RH5_A485,group=group_p300.P3F,fill=group_p300.P3F))+geom_jitter(alpha=0.05,aes(color=group_p300.P3F))+
+  scale_fill_manual(values = my2cols)+scale_color_manual(values = my2cols)+theme_bw()+geom_boxplot(outlier.shape = NA)+facet_wrap(~group_genes)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1), legend.position = "none")
 
-
-
-
-
-
+#################################################################################
