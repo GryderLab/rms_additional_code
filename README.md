@@ -1,11 +1,12 @@
-# Updates to the RMS Project Paper
+# Response to Reviewer Comments on "PAX3-FOXO1 uses its activation domain to recruit CBP/P300 and shape RNA Pol2 cluster distribution"
 by Yaw Asante and Bhava Udhayakumar
 July 2023
 
-This repo contains the code used to create the figures and datasets requested by the reviewers of the Osman et al 2023 paper, submitted to Nature Communications.
+This repo contains the code used to create the figures and datasets requested by the reviewers of the Asante et al 2023 paper, submitted to Nature Communications.
 
 ### Issue 1
 Activity from directly bound P3F target genes (within 500kb of P3F binding) vs indirect targets. 
+(Code provided, included as part of Supplementary Table 2)
 
 ### Issue 2
 Separation into C793 mutation dependent and partially dependent gene sets combined with an analysis of the contextual nature of the P3F binding site motifs.
