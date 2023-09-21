@@ -1,8 +1,50 @@
 # Response to Reviewer Comments on "PAX3-FOXO1 uses its activation domain to recruit CBP/P300 and shape RNA Pol2 cluster distribution"
 by Yaw Asante and Bhava Udhayakumar
-July 2023
+September 2023 - IN PROGRESS
 
-This repo contains the code used to create the figures and datasets requested by the reviewers of the Asante et al 2023 paper, submitted to Nature Communications.
+This repo contains the code and tools used to create the figures and datasets in Asante, Benischke and Osman et al, 2023. Other tools used indicated as noted at the bottom.
+
+## Figures made, by Tool:
+
+### ChIP-seq Track Visualization with IGV
+Source: External, 
+Figure 
+
+### Principal Component Analysis of RNA Seq
+Source: In-House, in 
+
+
+### Rank GSEA Analysis of Gene Expression
+Source: In-House, 
+
+
+
+## Tools used by Figure:
+
+### Figure 3
+Panel A is a principal component analysis of RNA-seq data, made with .
+Panel B is a heatmap of expression made with 
+Panel C is a rank plot of gene set enrichment made with .
+Panel D is a scatterplot made with GraphPad Prism.
+Panel E is a pie chart made with GraphPad Prism.
+Panel F and Panel H consist of ChIP-seq data tracks plotted with IGV.
+Panel G is a bar plot made with GraphPad Prism. 
+Panel I pairs a profile plot and a heatmap and was made with  (which employs deeptools).
+
+### Figure 4
+Panel A contains a volcano plot made with GraphPad Prism.
+Panel F pairs profile plots of read-pileup with corresponding heatmaps and were made with . 
+Panel G is a principal component analysis of RNA-seq data, made with .
+Panel H is a rank plot of gene set enrichment made with .
+
+### Figure 5
+
+Panel H consists of rank plots of gene set enrichment made with .
+Panel J is a bar plot made with GraphPad Prism.
+Panel K is a line plot made with GraphPad Prism.
+Panel L i
+Panel M consist of ChIP-seq data tracks plotted with IGV.
+
 
 ### Issue 1
 Activity from directly bound P3F target genes (within 500kb of P3F binding) vs indirect targets. 
