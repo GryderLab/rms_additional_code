@@ -8,14 +8,17 @@ This repo contains the code and tools used to create the figures and datasets in
 
 ### ChIP-seq Track Visualization with IGV
 Source: External, https://software.broadinstitute.org/software/igv/ 
-Figure 
+Figure 3F, Figure 3H, Figure 5M
 
 ### Principal Component Analysis of RNA Seq
 Source: In-House, in 
-
+Figure 3A
 
 ### Rank GSEA Analysis of Gene Expression
 Source: In-House, 
+Figure 3C, Figure 4H, Figure 5H
+
+### 
 
 
 
