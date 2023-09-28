@@ -14,11 +14,11 @@ Figure 3F, Figure 3H, Figure 5M
 Source: In-House, in 
 Figure 3A
 
-### Rank GSEA Analysis of Gene Expression
+### Ranked Gene Set Enrichment Analysis of Gene Expression
 Source: In-House, 
 Figure 3C, Figure 4H, Figure 5H
 
-### 
+### Analysis of HiChIP Data
 
 
 
@@ -30,7 +30,7 @@ Panel B is a heatmap of expression made with <a href="https://github.com/GryderA
 Panel C is a rank plot of gene set enrichment made with the <a href="https://github.com/GryderArt/VisualizeRNAseq/blob/master/RNAseq_Pipeline/buildTPM_Matrix_GSEAranklist_Heatmaps.R"> GSEA ranklist script</a> in <a href="https://github.com/GryderArt/VisualizeRNAseq/tree/master"> VisualizeRNASeq</a>.
 Panel D is a scatterplot made with GraphPad Prism.
 Panel E is a pie chart made with GraphPad Prism.
-Panel F and Panel H consist of ChIP-seq data tracks plotted with the <a href="">Integrated Genome Viewer (IGV) </a>.
+Panel F and Panel H consist of ChIP-seq data tracks plotted with the <a href="https://software.broadinstitute.org/software/igv/">Integrated Genome Viewer (IGV) </a>.
 Panel G is a bar plot made with GraphPad Prism. 
 Panel I pairs a profile plot and a heatmap and was made with <a href="https://github.com/GryderLab/ChIPseqPipe/tree/master/plotTSSheat">plotBEDheat</a> from the <a href="https://github.com/GryderLab/ChIPseqPipe">ChIPseqPipe repo</a> (which employs deeptools).
 
@@ -41,32 +41,27 @@ Panel G is a principal component analysis of RNA-seq data, made with <a href="ht
 Panel H is a rank plot of gene set enrichment made with <a href="https://github.com/GryderArt/VisualizeRNAseq/blob/master/RNAseq_Pipeline/buildTPM_Matrix_GSEAranklist_Heatmaps.R"> GSEA ranklist script</a> in <a href="https://github.com/GryderArt/VisualizeRNAseq/tree/master"> VisualizeRNASeq</a>.
 
 ### Figure 5
-
 Panel H consists of rank plots of gene set enrichment made with <a href="https://github.com/GryderArt/VisualizeRNAseq/blob/master/RNAseq_Pipeline/buildTPM_Matrix_GSEAranklist_Heatmaps.R"> GSEA ranklist script</a> in <a href="https://github.com/GryderArt/VisualizeRNAseq/tree/master"> VisualizeRNASeq</a>.
 Panel J is a bar plot made with GraphPad Prism.
 Panel K is a line plot made with GraphPad Prism.
-Panel L is
-Panel M consist of ChIP-seq data tracks plotted with IGV.
+Panel M consist of ChIP-seq data tracks plotted with <a href="https://software.broadinstitute.org/software/igv/">Integrated Genome Viewer (IGV) </a>.
 
 ### Figure 6
-
 Panel A (right) is output from the Genic Rank of Active Clustered Elements (GRACE) tool provided at 
-Panel B 
-Panel D 
+Panel B and Panel D were made with output from GRACE.
 Panel E consists of boxplots made using code novel to the resumbission, provided in here in subfolder 
-Panel F (left) are heatmaps and profile plots made with 
+Panel F (left) are heatmaps and profile plots made with <a href="https://github.com/GryderLab/ChIPseqPipe/tree/master/plotTSSheat">plotBEDheat</a> from the <a href="https://github.com/GryderLab/ChIPseqPipe">ChIPseqPipe repo</a>.
 Panel F (right) is an Aggregate Peak Analysis plot made with <a href=""> </a> 
 Panel G consists of moving average plots made with <a href=""> </a> from <a href=""> </a>.
 Panel H consists of rankplots of HiChIP data using data novel to the resubmission, provided here in subfolder .
 
 ### Figure 7
-Panel A is a boxplot of HiChIP signal made with <a href=""> </a> from <a href=""> </a>.
-Panel B was made using motif information from HOMER (version ).
+Panel A is a boxplot of HiChIP signal made with <a href="https://github.com/GryderLab/ChIPseqPipe/tree/master/bedCovComp">BedCovCompare</a> from <a href="https://github.com/GryderLab/ChIPseqPipe">ChIPseqPipe</a>.
+Panel B was made using motif information from HOMER (version 4.9.1, http://homer.ucsd.edu/homer/index.html).
 Panel D is a boxplot made using HiChIP data with code novel to the resubmission, provided here in subfolder .
 
 ### Figure 8
-Panel B
-Panel D consists of Aggregate Peak Analysis (APA) plots made with  . Data used was novel to the resubmisison.
+Panel D consists of Aggregate Peak Analysis (APA) plots made with plotAPA from <a href="https://github.com/GryderLab/peaks3d">peaks3d</a>. Data used was novel to the resubmisison.
 
 ### Issue 1
 Activity from directly bound P3F target genes (within 500kb of P3F binding) vs indirect targets. 
