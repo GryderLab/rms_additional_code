@@ -30,22 +30,22 @@ Panel B is a heatmap of expression made with <a href="https://github.com/GryderA
 Panel C is a rank plot of gene set enrichment made with the <a href="https://github.com/GryderArt/VisualizeRNAseq/blob/master/RNAseq_Pipeline/buildTPM_Matrix_GSEAranklist_Heatmaps.R"> GSEA ranklist script</a> in <a href="https://github.com/GryderArt/VisualizeRNAseq/tree/master"> VisualizeRNASeq</a>.
 Panel D is a scatterplot made with GraphPad Prism.
 Panel E is a pie chart made with GraphPad Prism.
-Panel F and Panel H consist of ChIP-seq data tracks plotted with the Integrated Genome Viewer (IGV).
+Panel F and Panel H consist of ChIP-seq data tracks plotted with the <a href="">Integrated Genome Viewer (IGV) </a>.
 Panel G is a bar plot made with GraphPad Prism. 
-Panel I pairs a profile plot and a heatmap and was made with  (which employs deeptools).
+Panel I pairs a profile plot and a heatmap and was made with <a href="https://github.com/GryderLab/ChIPseqPipe/tree/master/plotTSSheat">plotBEDheat</a> from the <a href="https://github.com/GryderLab/ChIPseqPipe">ChIPseqPipe repo</a> (which employs deeptools).
 
 ### Figure 4
 Panel A contains a volcano plot made with GraphPad Prism.
-Panel F pairs profile plots of read-pileup with corresponding heatmaps and were made with . 
-Panel G is a principal component analysis of RNA-seq data, made with .
-Panel H is a rank plot of gene set enrichment made with .
+Panel F pairs profile plots of read-pileup with corresponding heatmaps and were made with <a href="https://github.com/GryderLab/ChIPseqPipe/tree/master/plotTSSheat">plotBEDheat</a> from the <a href="https://github.com/GryderLab/ChIPseqPipe">ChIPseqPipe repo</a> (which employs deeptools).. 
+Panel G is a principal component analysis of RNA-seq data, made with <a href="https://github.com/GryderArt/VisualizeRNAseq/blob/master/RNAseq_Pipeline/buildTPM_Matrix_GSEA_Heat_PCA.R"> the RNA-seq pipeline </a> in <a href="https://github.com/GryderArt/VisualizeRNAseq/tree/master"> VisualizeRNASeq</a>..
+Panel H is a rank plot of gene set enrichment made with <a href="https://github.com/GryderArt/VisualizeRNAseq/blob/master/RNAseq_Pipeline/buildTPM_Matrix_GSEAranklist_Heatmaps.R"> GSEA ranklist script</a> in <a href="https://github.com/GryderArt/VisualizeRNAseq/tree/master"> VisualizeRNASeq</a>.
 
 ### Figure 5
 
-Panel H consists of rank plots of gene set enrichment made with .
+Panel H consists of rank plots of gene set enrichment made with <a href="https://github.com/GryderArt/VisualizeRNAseq/blob/master/RNAseq_Pipeline/buildTPM_Matrix_GSEAranklist_Heatmaps.R"> GSEA ranklist script</a> in <a href="https://github.com/GryderArt/VisualizeRNAseq/tree/master"> VisualizeRNASeq</a>.
 Panel J is a bar plot made with GraphPad Prism.
 Panel K is a line plot made with GraphPad Prism.
-Panel L i
+Panel L is
 Panel M consist of ChIP-seq data tracks plotted with IGV.
 
 ### Figure 6
