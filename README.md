@@ -1,6 +1,6 @@
 # Additional Code for "PAX3-FOXO1 uses its activation domain to recruit CBP/P300 and shape RNA Pol2 cluster distribution"
 by Yaw Asante and Bhava Udhayakumar <br>
-(Updated: 12-15-2023 -> Usability and readability updates coming later this week, thanks for your early interest! Immediate questions can be sent to yaw.asante@case.edu) <br>
+(Updated: 12-15-2023 -> Usability and readability updates coming later this week, thanks for your early interest! Immediate questions can be sent to yaw.asante@case.edu . For plots made with tools outside of provided links, I've noted there eventual addition with "pending subfolder".  ~ Yaw) <br>
 
 This repo contains the code and tools used to create the figures and datasets in Asante, Benischke and Osman et al, 2023. Any omissions or uncertainty can be reported to yaw.asante@case.edu
 
