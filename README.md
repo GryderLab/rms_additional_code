@@ -1,6 +1,7 @@
 # Response to Reviewer Comments on "PAX3-FOXO1 uses its activation domain to recruit CBP/P300 and shape RNA Pol2 cluster distribution"
 by Yaw Asante and Bhava Udhayakumar
-September 2023 - IN PROGRESS
+September 2023
+(Updated: 12-15-2023 -> Usability and readability updates coming later this week, thanks for your interest! Immediate questions can be sent to yaw.asante@case.edu)
 
 This repo contains the code and tools used to create the figures and datasets in Asante, Benischke and Osman et al, 2023. Other tools used indicated as noted at the bottom.
 
@@ -15,11 +16,12 @@ Source: In-House, in
 Figure 3A
 
 ### Ranked Gene Set Enrichment Analysis of Gene Expression
-Source: In-House, 
+Source: In-House, <a href="https://github.com/GryderArt/VisualizeRNAseq/blob/master/RNAseq_Pipeline/buildTPM_Matrix_GSEAranklist_Heatmaps.R"> GSEA ranklist on GitHub</a>
 Figure 3C, Figure 4H, Figure 5H
 
 ### Analysis of HiChIP Data
-
+Source: In-House
+Figures 6, 7 and 8
 
 
 ## Tools used by Figure:
@@ -53,12 +55,12 @@ Panel E consists of boxplots made using code novel to the resumbission, provided
 Panel F (left) are heatmaps and profile plots made with <a href="https://github.com/GryderLab/ChIPseqPipe/tree/master/plotTSSheat">plotBEDheat</a> from the <a href="https://github.com/GryderLab/ChIPseqPipe">ChIPseqPipe repo</a>.
 Panel F (right) is an Aggregate Peak Analysis plot made with <a href=""> </a> 
 Panel G consists of moving average plots made with <a href=""> </a> from <a href=""> </a>.
-Panel H consists of rankplots of HiChIP data using data novel to the resubmission, provided here in subfolder .
+Panel H consists of rankplots of HiChIP data using data novel to the resubmission, provided here in subfolder 6H.
 
 ### Figure 7
 Panel A is a boxplot of HiChIP signal made with <a href="https://github.com/GryderLab/ChIPseqPipe/tree/master/bedCovComp">BedCovCompare</a> from <a href="https://github.com/GryderLab/ChIPseqPipe">ChIPseqPipe</a>.
 Panel B was made using motif information from HOMER (version 4.9.1, http://homer.ucsd.edu/homer/index.html).
-Panel D is a boxplot made using HiChIP data with code novel to the resubmission, provided here in subfolder .
+Panel D is a boxplot made using HiChIP data with code novel to the resubmission, provided here in subfolder 7D.
 
 ### Figure 8
 Panel D consists of Aggregate Peak Analysis (APA) plots made with plotAPA from <a href="https://github.com/GryderLab/peaks3d">peaks3d</a>. Data used was novel to the resubmisison.
