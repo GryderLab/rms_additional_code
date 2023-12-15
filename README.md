@@ -22,13 +22,13 @@ Source: In-House, <a href="https://github.com/GryderArt/VisualizeRNAseq/blob/mas
 Figure 3C, Figure 4H, Figure 5H
 
 ### Analysis of HiChIP Data
-Source: In-House, using <a href="https://github.com/GryderLab/peaks3d">peaks3d</a>. 
+Source: In-House, using <a href="https://github.com/GryderLab/peaks3d">peaks3d</a> and aquatools.
 
-Figures 6, 7 and 8
+Figures 6 (all panels), Figure 7 (all panels) and Figure 8 (all panels)
+
 
 
 ## Tools used by Figure:
-
 ### Figure 3
 Panel A is a principal component analysis of RNA-seq derived TPM data, made with <a href="https://github.com/GryderArt/VisualizeRNAseq/blob/master/RNAseq_Pipeline/buildTPM_Matrix_GSEA_Heat_PCA.R"> the RNA-seq pipeline </a> in <a href="https://github.com/GryderArt/VisualizeRNAseq/tree/master"> VisualizeRNASeq</a>.
 
@@ -109,6 +109,6 @@ Panel D is a boxplot made using same HiChIP data from Panel C, code provided in 
 Panel E is a histogram made using the same HiChIP data from Panel C.
 
 ### Figure 8
-Panel B made using HiChIP data viewed via <a href="https://github.com/aidenlab/Juicebox">Juicebox</a>, <a href="https://software.broadinstitute.org/software/igv/">Integrated Genome Viewer (IGV) </a> and analyzed with <a href="https://github.com/GryderLab/peaks3d">peaks3d</a>.
+Panel B made using HiChIP data viewed via <a href="https://github.com/aidenlab/Juicebox">Juicebox</a>, <a href="https://software.broadinstitute.org/software/igv/">Integrated Genome Viewer (IGV) </a> and analyzed with plotAPA and runpeaks3d (generation of loops) from <a href="https://github.com/GryderLab/peaks3d">peaks3d</a>.
 
 Panel D consists of Aggregate Peak Analysis (APA) plots of RH4 HiChIP data (with dTAG47 KO of P3F) made with plotAPA from <a href="https://github.com/GryderLab/peaks3d">peaks3d</a>. Code provided in pending subfolder.
