@@ -1,11 +1,6 @@
 # Additional Code for "PAX3-FOXO1 uses its activation domain to recruit CBP/P300 and shape RNA Pol2 cluster distribution"
-by Yaw Asante and Bhava Udhayakumar
-
-12-15-2023 Update:
-Usability and readability updates coming later this week, thanks for your early interest! Immediate questions can be sent to yaw.asante@case.edu .
-
-To comply with some guidelines, I'm going to recommit the code folders for plots made with tools outside of provided links. I've noted there eventual addition with the phrase "pending subfolder". ~ Yaw) <br>
-
+Code provided by: Yaw Asante and Bhava Udhayakumar
+Questions and data request can be made to: yaw.asante@case.edu
 
 This repo contains the code and tools used to create the figures and datasets in Asante, Benischke and Osman et al, 2023. Any omissions or uncertainty can be reported to yaw.asante@case.edu
 
@@ -83,7 +78,7 @@ Panel A (right) is output from the Genic Rank of Active Clustered Elements (GRAC
 
 Panel B and Panel D were made in R with output from GRACE.
 
-Panel E consists of boxplots made using code novel to the resumbission, provided in here in pending subfolder.
+Panel E consists of boxplots made using RNA-seq and HiChIP data via code novel to the resumbission, able to be provided upon reasonable request.
 Changes in RH4 gene expression due to dCBP1, split across features associated with genes near and distal from p300 enhancers. 
 <p align="center"><img width="472" alt="Changes in expression due to dCBP1 with p300 + P3F and without P3F" src="https://github.com/GryderLab/rms_additional_code/assets/135348829/81d183e7-0452-4091-963a-44f36691f511">
 </p> 
@@ -94,7 +89,7 @@ Panel F (right) is an Aggregate Peak Analysis plot made with <a href="https://gi
 
 Panel G consists of moving average plots made with <a href="https://github.com/GryderLab/ChIPseqPipe/tree/master/bedCovComp">BedCovCompare</a> from <a href="https://github.com/GryderLab/ChIPseqPipe">ChIPseqPipe repo</a>.
 
-Panel H consists of rankplots of HiChIP data using , provided here in pending subfolder.
+Panel H consists of rankplots of HiChIP data using BedCovCompare (as previously described here), created with code that can be provided upon reasonable request.
 The impact of P300/CBP degraders on RH5 H3K27ac, segregated by enhancer and promoter regions (compared to impact on RH4 Pol2).
 <p align="center"><img width="472" alt="BedCovCompare Output for Pol2 and H3K27ac HiChIP" src="https://github.com/GryderLab/rms_additional_code/assets/135348829/7126e44a-bafa-4f94-b832-4922e852269e">
 </p>
@@ -107,7 +102,7 @@ Panel B was made using motif information from HOMER (version 4.9.1, http://homer
 
 Panel C is a donut plot made with data from the HiChIP analysis obtained via <a href="https://github.com/GryderLab/peaks3d">peaks3d</a>.
 
-Panel D is a boxplot made using same HiChIP data from Panel C, code provided in pending subfolder.
+Panel D is a boxplot made using same HiChIP data from Panel C overlapped with p300 and P3F binding sites from ChIP-seq as described, with code which can be provided upon reasonable request.
 3D genome looping at Pol2 sites strongly bound by P300 with and without P3F.
 <p align="center"><img width="472" alt="Looping to sites with and without P3F" src="https://github.com/GryderLab/rms_additional_code/assets/135348829/7ebd86d5-3b27-4b96-8351-b694422ef3e7">
 </p>
@@ -117,4 +112,4 @@ Panel E is a histogram made using the same HiChIP data from Panel C.
 ### Figure 8
 Panel B made using HiChIP data viewed via <a href="https://github.com/aidenlab/Juicebox">Juicebox</a>, <a href="https://software.broadinstitute.org/software/igv/">Integrated Genome Viewer (IGV) </a> and analyzed with plotAPA and runpeaks3d (generation of loops) from <a href="https://github.com/GryderLab/peaks3d">peaks3d</a>.
 
-Panel D consists of Aggregate Peak Analysis (APA) plots of RH4 HiChIP data (with dTAG47 KO of P3F) made with plotAPA from <a href="https://github.com/GryderLab/peaks3d">peaks3d</a>. Code provided in pending subfolder.
+Panel D consists of Aggregate Peak Analysis (APA) plots of RH4 HiChIP data (with dTAG47 KO of P3F) made with plotAPA from <a href="https://github.com/GryderLab/peaks3d">peaks3d</a>. APA plots made with the parameters described in the figure, but code can be provided upon reasonable request.
